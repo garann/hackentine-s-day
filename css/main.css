@@ -1,0 +1,40 @@
+.hackentines-day-card-container {
+	width: 500px;
+	height: 700px;
+	position: absolute;
+	margin-left: 50%;
+	left: -250px;
+}
+
+.front, .inside {
+	position: absolute;
+	padding: 25px;
+	height: 650px;
+	width: 450px;
+	box-shadow: -3px 4px 5px 0px rgba(50,50,50,.5);
+	backface-visibility: hidden;
+	transition: 0.6s;
+	transform-style: preserve-3d;
+}
+
+.front {
+	color: red;
+	background-color: pink;
+	transform: rotateY(0deg);
+	z-index: 2;
+}
+.flipped .front {
+	transform: rotateY(180deg);
+}
+
+.inside {
+	background-color: pink;
+	transform: rotateY(180deg);
+}
+.flipped .inside {
+	transform: rotateY(0deg);
+}
+
+p {
+	color: black;
+}
